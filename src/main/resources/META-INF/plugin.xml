@@ -33,6 +33,7 @@
             <add-to-group group-id="MainMenu" anchor="last" />
             <action id="helloAction" class="com.soma.plugin.first.HelloAction" description="Hello action class" text="Say Hello"/>
             <action id="fileChooserAction" class="com.soma.plugin.first.FileChooserAction" description="File chooser class" text="Select Path"/>
+            <action id="inputDialogAction" class="com.soma.plugin.first.InputDialogAction" description="Input dialog class" text="Text Input"/>
         </group>
     </actions>
 </idea-plugin>
