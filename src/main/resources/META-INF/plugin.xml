@@ -29,9 +29,10 @@
     </extensions>
     <actions>
 <!--        Group is create Menu-->
-        <group id="com.soma" text="MyPlugin" description="Root Package for the Project">
+        <group id="com.soma" text="MyPlugin_1" description="Root Package for the Project">
             <add-to-group group-id="MainMenu" anchor="last" />
-            <action id="StartingPoint" class="com.soma.plugin.first.HelloAction" description="Action Class" text="Say Hello"/>
+            <action id="first" class="com.soma.plugin.first.HelloAction" description="Hello action class" text="Say Hello"/>
+            <action id="second" class="com.soma.plugin.first.FileChooserAction" description="File chooser class" text="Select Path"/>
         </group>
     </actions>
 </idea-plugin>
