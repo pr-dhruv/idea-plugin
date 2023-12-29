@@ -7,6 +7,11 @@ import com.intellij.openapi.ui.Messages
 class HelloAction : AnAction() {
 
     override fun actionPerformed(e: AnActionEvent) {
+        showMessageDialog(e)
+    }
+
+
+    private fun showMessageDialog(e: AnActionEvent) {
         Messages.showMessageDialog(e.project,
                 "Hello, world!",
                 "Plugin Demo",

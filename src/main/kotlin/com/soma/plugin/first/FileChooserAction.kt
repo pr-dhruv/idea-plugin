@@ -10,8 +10,20 @@ import com.intellij.util.Consumer
 class FileChooserAction : AnAction() {
 
     override fun actionPerformed(e: AnActionEvent) {
+        showFileChooser(e)
+    }
+
+    /**
+     * 1st Flag: Choose Files
+     * 2nd Flag: Choose Folders
+     * 3rd Flag: Choose Jars
+     * 4th Flag: Choose Jars as Files
+     * 5th Flag: Choose Jar Content
+     * 6th Flag: Choose Multiple
+     */
+    private fun showFileChooser(e: AnActionEvent) {
         val fileChooserDescriptor = FileChooserDescriptor(
-                false,
+                true,
                 true,
                 false,
                 false,
